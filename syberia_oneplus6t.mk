@@ -20,30 +20,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from oneplus device
-$(call inherit-product, device/oneplus/oneplus6/device.mk)
+$(call inherit-product, device/oneplus/oneplus6t/device.mk)
 
 # Inherit some common Syberia stuff.
 $(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_oneplus6
-PRODUCT_DEVICE := oneplus6
+PRODUCT_NAME := syberia_oneplus6t
+PRODUCT_DEVICE := oneplus6t
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := ONEPLUS A6000
+PRODUCT_MODEL := ONEPLUS A6013
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus6
-TARGET_VENDOR_DEVICE_NAME := OnePlus6
+TARGET_VENDOR_PRODUCT_NAME := OnePlus6T
+TARGET_VENDOR_DEVICE_NAME := OnePlus6T
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus6 \
-    PRODUCT_NAME=OnePlus6 \
-    PRIVATE_BUILD_DESC="OnePlus6-user 8.1.0 OPM1.171019.011 273 release-keys"
+    TARGET_DEVICE=OnePlus6T \
+    PRODUCT_NAME=OnePlus6T \
+    PRIVATE_BUILD_DESC="OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:8.1.0/OPM1.171019.011/06140300:user/release-keys
+BUILD_FINGERPRINT := OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1812260627:user/release-keys
 
 TARGET_VENDOR := OnePlus
 
