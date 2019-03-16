@@ -23,7 +23,7 @@ $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -170,7 +170,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.sdm845 \
     libcutils \
     libgptutils \
-    libz \
+    libz
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
