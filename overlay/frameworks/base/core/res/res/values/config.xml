@@ -354,10 +354,10 @@
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">true</bool>
+    <bool name="config_intrusiveNotificationLed">false</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <bool name="config_intrusiveBatteryLed">false</bool>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
@@ -726,7 +726,7 @@
     <bool name="config_showNavigationBar">true</bool>
 
     <!-- Enable system navigation keys. -->
-    <bool name="config_supportSystemNavigationKeys">true</bool>
+    <bool name="config_supportSystemNavigationKeys">false</bool>
 
     <!-- Burn in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
