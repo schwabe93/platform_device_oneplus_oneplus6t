@@ -112,7 +112,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final boolean sIsOnePlus6 = android.os.Build.MODEL.equals("ONEPLUS A6003");
 
     public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
-    public static final String CLIENT_PACKAGE_PATH = "/data/vendor/omni/client_package_name";
+    public static final String CLIENT_PACKAGE_PATH = "/data/misc/camera/client_package_name";
 
     public static final String PACKAGE_SYSTEMUI = "com.android.systemui";
 
