@@ -181,11 +181,6 @@ public class GestureSettings extends PreferenceFragment implements
             value = Settings.System.getString(getContext().getContentResolver(), DEVICE_GESTURE_MAPPING_10);
             mFPLongPressApp.setValue(value);
             mFPLongPressApp.setOnPreferenceChangeListener(this);
-        } else {
-            Preference fpGestures = findPreference(KEY_FP_GESTURE_CATEGORY);
-            Preference fpGesturesDefault = findPreference(KEY_FP_GESTURE_DEFAULT_CATEGORY);
-            getPreferenceScreen().removePreference(fpGestures);
-            getPreferenceScreen().removePreference(fpGesturesDefault);
         }
 
         new FetchPackageInformationTask().execute();
