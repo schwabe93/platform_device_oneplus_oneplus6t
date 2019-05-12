@@ -84,6 +84,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
+    DisplayMode \
     vendor.display.config@1.0
 
 # Hostapd
@@ -159,16 +160,25 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/addon.d/51-oneplus-camera.sh:system/addon.d/51-oneplus-camera.sh  \
     $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml
 
-# Device Parts
-PRODUCT_PACKAGES += \
-    DeviceParts
-
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# tri-state-key
+PRODUCT_PACKAGES += \
+	KeyHandler \
+    tri-state-key_daemon
+	
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+	
+# Pocket mode
+PRODUCT_PACKAGES += \
+    OnePlusPocketMode	
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -201,3 +211,12 @@ PRODUCT_BOOT_JARS += \
 # Updater
 PRODUCT_PACKAGES += \
     Updater
+	
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
+# World APN list
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml

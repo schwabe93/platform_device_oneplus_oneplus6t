@@ -12,4 +12,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_oneplus6t.mk
+    $(LOCAL_DIR)/aosp_oneplus6t.mk
