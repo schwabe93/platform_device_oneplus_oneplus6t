@@ -85,7 +85,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     libvulkan \
     DisplayMode \
-    vendor.display.config@1.0
+    vendor.display.config@1.7
 
 # Hostapd
 PRODUCT_COPY_FILES += \
